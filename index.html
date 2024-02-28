@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include jQuery Validate plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <!-- Your other scripts -->
+    <script src="validate.js"></script>
+
+    <link href="./form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">
+              <b class="h2 text-uppercase mt-5 mb-5">Register User</b>
+            </h5>
+            <form class="p-4" id="register-form">
+              <div class="input-style">
+                <label for="username" class="form-label mt-2">User Name</label>
+                <div class="input-style2">
+                  <input type="text" class="form-control" name="username" />
+                  <p class="test"></p>
+                </div>
+              </div>
+
+              <div class="input-style">
+                <label for="email" class="form-label mt-2">Email address</label>
+                <div class="input-style2">
+                  <input type="email" class="form-control" name="email" />
+                  <p class="test"></p>
+                </div>
+              </div>
+
+              <div class="input-style">
+                <label for="password" class="form-label mt-2">Password</label>
+                <div class="input-style2">
+                  <input type="password" class="form-control" name="password" />
+                  <p class="test"></p>
+                </div>
+              </div>
+
+              <div class="input-style">
+                <label for="confirmpassword" class="form-label mt-2"
+                  >Confirm Password</label
+                >
+                <div class="input-style2">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="confirmpassword"
+                  />
+                  <p class="test"></p>
+                </div>
+              </div>
+
+              <div class="input-style">
+                <label class="form-label w-25" for="checkout"
+                  >Education Level</label
+                >
+                <div class="mx-4 w-75">
+                  <div>
+                    <input
+                      type="checkbox"
+                      class="form-check-input mx-3"
+                      id="checkout1"
+                      name="checkout"
+                    />
+                    <label class="form-label mx-2" for="checkout1">10th</label>
+                    <input
+                      type="checkbox"
+                      class="form-check-input mx-3"
+                      id="checkout2"
+                      name="checkout"
+                    />
+                    <label class="form-label mx-2" for="checkout2">12th</label>
+                    <input
+                      type="checkbox"
+                      class="form-check-input mx-3"
+                      id="checkout3"
+                      name="checkout"
+                    />
+                    <label class="form-label mx-2" for="checkout3"
+                      >Any Degree</label
+                    >
+                  </div>
+                  <p class="test"></p>
+                </div>
+              </div>
+
+              <div class="input-style">
+                <label class="form-label mt-2 w-25">Gender</label>
+                <div class="form-group mt-2 mx-1">
+                  <input
+                    type="radio"
+                    id="gender_male"
+                    value="male"
+                    name="gender"
+                  />
+                  <label class="form-label mx-4" for="gender_male">Male</label>
+                  <input
+                    type="radio"
+                    value="female"
+                    id="gender_female"
+                    name="gender"
+                    class="mx-3"
+                  />
+                  <label class="form-label mx-4" for="gender_female"
+                    >Female</label
+                  >
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mb-3 mt-5">
+                <button type="submit" class="btn btn-warning w-50">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 700px !important;
+  height: 800px !important;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-style2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  font-family: serif;
+  color: red;
+}
+
+.form-label {
+  color: #696969f8;
+}
+.test {
+  height: 40px;
+  margin: 2px;
+  padding-top: 6px;
+}
